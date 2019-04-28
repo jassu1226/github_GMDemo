@@ -13,6 +13,8 @@
 		EA391BFE227625CC0065EC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA391BFC227625CC0065EC68 /* Main.storyboard */; };
 		EA391C00227625CD0065EC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA391BFF227625CD0065EC68 /* Assets.xcassets */; };
 		EA391C03227625CD0065EC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA391C01227625CD0065EC68 /* LaunchScreen.storyboard */; };
+		EA391C0D2276323C0065EC68 /* CommitDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA391C0C2276323C0065EC68 /* CommitDetailCell.swift */; };
+		EA391C0F227635660065EC68 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA391C0E227635660065EC68 /* Commit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		EA391BFF227625CD0065EC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA391C02227625CD0065EC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA391C04227625CD0065EC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA391C0C2276323C0065EC68 /* CommitDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitDetailCell.swift; sourceTree = "<group>"; };
+		EA391C0E227635660065EC68 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,6 @@
 				AA9782AE4FDC9FAFD8CC880C /* Pods-GM_Demo.debug.xcconfig */,
 				49F687F76E1E035D05D626B8 /* Pods-GM_Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +84,8 @@
 			children = (
 				EA391BF8227625CC0065EC68 /* AppDelegate.swift */,
 				EA391BFA227625CC0065EC68 /* ViewController.swift */,
+				EA391C0E227635660065EC68 /* Commit.swift */,
+				EA391C0C2276323C0065EC68 /* CommitDetailCell.swift */,
 				EA391BFC227625CC0065EC68 /* Main.storyboard */,
 				EA391BFF227625CD0065EC68 /* Assets.xcassets */,
 				EA391C01227625CD0065EC68 /* LaunchScreen.storyboard */,
@@ -190,12 +195,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GM_Demo/Pods-GM_Demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -209,8 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA391C0F227635660065EC68 /* Commit.swift in Sources */,
 				EA391BFB227625CC0065EC68 /* ViewController.swift in Sources */,
 				EA391BF9227625CC0065EC68 /* AppDelegate.swift in Sources */,
+				EA391C0D2276323C0065EC68 /* CommitDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
