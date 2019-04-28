@@ -11,6 +11,8 @@ import Alamofire
 import SwiftyJSON
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    //MARK: - Properties and Outlet connections
+    
     @IBOutlet weak var tableView: UITableView!
     let url = "https://api.github.com/repos/jassu1226/github_GMDemo/commits"
     var commitsDataSource = [Commit]()
@@ -19,14 +21,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         getCommitDetails()
-        
+       
+        tableView.estimatedRowHeight = 200
         tableView.delegate = self
         tableView.dataSource = self
-        
+
     }
     
-    //MARK: - Networking
+    //MARK: - Networking and JSON Parsing
+    
     func getCommitDetails()  {
+        
         self.commitsDataSource.removeAll()
         
         Alamofire.request(url, method: .get).responseJSON { (response) in
@@ -50,11 +55,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
     }
-    
-    //Mark: JSON Parsing
-    
-    
-    
+
     //MARK: - TableView DataSource Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,6 +73,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     // MARK: - Tableview delegate Methods
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

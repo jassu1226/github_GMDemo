@@ -37,20 +37,23 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXXXXXXXXXXX" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op1-bE-kPA" userLabel="CommitMessage">
-                                                    <rect key="frame" x="16" y="121.5" width="135.5" height="20"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <rect key="frame" x="16" y="100" width="343" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsQ-Mf-wV7" userLabel="CommitNumberLbl">
-                                                    <rect key="frame" x="16" y="66" width="57.5" height="17.5"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <rect key="frame" x="16" y="66" width="61" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="61" id="bSH-fV-SjR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commit:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptl-MW-ZYy" userLabel="CommitNumberValue">
-                                                    <rect key="frame" x="81.5" y="66" width="57.5" height="17.5"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <rect key="frame" x="85" y="66.5" width="53.5" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -59,11 +62,14 @@
                                                 <constraint firstItem="ptl-MW-ZYy" firstAttribute="leading" secondItem="MsQ-Mf-wV7" secondAttribute="trailing" constant="8" id="2fX-Ua-T0e"/>
                                                 <constraint firstItem="91z-W4-mVg" firstAttribute="top" secondItem="IqI-Z8-yJq" secondAttribute="top" constant="16" id="4UY-ae-q9I"/>
                                                 <constraint firstItem="Op1-bE-kPA" firstAttribute="leading" secondItem="IqI-Z8-yJq" secondAttribute="leading" constant="16" id="5C0-W6-8hJ"/>
-                                                <constraint firstAttribute="bottom" secondItem="Op1-bE-kPA" secondAttribute="bottom" constant="8" id="EPq-ad-G20"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ptl-MW-ZYy" secondAttribute="trailing" id="7LC-j2-2XV"/>
                                                 <constraint firstItem="ptl-MW-ZYy" firstAttribute="centerY" secondItem="IqI-Z8-yJq" secondAttribute="centerY" id="Ext-rg-jfi"/>
                                                 <constraint firstItem="MsQ-Mf-wV7" firstAttribute="leading" secondItem="IqI-Z8-yJq" secondAttribute="leading" constant="16" id="ORz-CO-DWV"/>
                                                 <constraint firstItem="91z-W4-mVg" firstAttribute="leading" secondItem="IqI-Z8-yJq" secondAttribute="leading" constant="16" id="X1K-rA-Arz"/>
                                                 <constraint firstItem="MsQ-Mf-wV7" firstAttribute="centerY" secondItem="IqI-Z8-yJq" secondAttribute="centerY" id="iNo-qH-Wg0"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="91z-W4-mVg" secondAttribute="trailing" constant="20" symbolic="YES" id="p2n-Hy-F2O"/>
+                                                <constraint firstAttribute="trailing" secondItem="Op1-bE-kPA" secondAttribute="trailing" constant="16" id="wXH-p2-Hil"/>
+                                                <constraint firstItem="Op1-bE-kPA" firstAttribute="top" secondItem="MsQ-Mf-wV7" secondAttribute="bottom" constant="16" id="yR2-WX-q03"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
